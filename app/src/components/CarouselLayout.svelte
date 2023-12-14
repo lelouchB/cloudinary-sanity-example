@@ -6,7 +6,7 @@
 <div class="flex flex-col items-center justify-center space-y-12">
 	<div class="carousel carousel-center w-full p-4 space-x-4 bg-primary rounded-box">
 		{#each gallery as picture}
-			<div class="carousel-item">
+			<div class="carousel-item" key={picture._key}>
 				<CldImage
 					src={picture.public_id}
 					width="300"

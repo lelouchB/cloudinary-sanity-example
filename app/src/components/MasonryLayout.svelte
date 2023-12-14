@@ -6,7 +6,7 @@
 
 <div class="columns-1 md:columns-2 lg:columns-3 gap-4">
 	{#each gallery as picture}
-		<div class="w-full mb-4">
+		<div class="w-full mb-4" key={picture._key}>
 			<CldImage
 				src={picture.public_id}
 				width="600"
