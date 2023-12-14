@@ -17,7 +17,6 @@ export default defineType({
       type: 'array',
       of: [{type: 'cloudinary.asset'}],
     }),
-
     defineField({
       name: 'publishedAt',
       title: 'Published at',
@@ -26,11 +25,9 @@ export default defineType({
       initialValue: () => new Date().toISOString(),
     }),
   ],
-
   preview: {
     select: {
       title: 'title',
-      media: 'galleryImages.0',
     },
   },
 })
